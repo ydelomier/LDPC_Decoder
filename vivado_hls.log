@@ -1,0 +1,44 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'ydelomier' on host 't1700dd4' (Windows NT_amd64 version 6.1) on Fri Jun 14 16:25:29 +0200 2019
+INFO: [HLS 200-10] In directory 'C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush'
+INFO: [HLS 200-10] Opening project 'C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC'.
+WARNING: [HLS 200-40] No C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC/solution_100MHz/solution_100MHz.aps file found.
+WARNING: [HLS 200-40] No C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC/solution_300MHz/solution_300MHz.aps file found.
+WARNING: [HLS 200-40] No C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC/solution_200MHz/solution_200MHz.aps file found.
+INFO: [HLS 200-10] Opening solution 'C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC/solution'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-10] Setting target device to 'xc7vx690tffg1761-2'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [COSIM 212-2] Generating simulation wrapper in SystemC ...
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+   Build using "C:/Xilinx/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling process_s1_do_action_1.cpp
+   Compiling main.cpp
+   Compiling process_s1_do_action_6.cpp
+   Compiling my_module.cpp
+   Compiling process_s2_do_action_5.cpp
+   Compiling barrel_shifter_barrel_shifter_RIGHT.cpp
+Makefile.rules:407: recipe for target 'obj/barrel_shifter_barrel_shifter_RIGHT.o' failed
+C:/Xilinx/Vivado/2018.3/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.2.0/../../../../x86_64-w64-mingw32/bin/as.exe: obj/barrel_shifter_barrel_shifter_RIGHT.o: too many sections (45780)
+C:\Users\YDELOM~1\AppData\Local\Temp\ccZYrD0V.s: Assembler messages:
+C:\Users\YDELOM~1\AppData\Local\Temp\ccZYrD0V.s: Fatal error: can't write 3776 bytes to section .text of obj/barrel_shifter_barrel_shifter_RIGHT.o because: 'File too big'
+C:/Xilinx/Vivado/2018.3/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.2.0/../../../../x86_64-w64-mingw32/bin/as.exe: obj/barrel_shifter_barrel_shifter_RIGHT.o: too many sections (45780)
+C:\Users\YDELOM~1\AppData\Local\Temp\ccZYrD0V.s: Fatal error: can't close obj/barrel_shifter_barrel_shifter_RIGHT.o: File too big
+make: *** [obj/barrel_shifter_barrel_shifter_RIGHT.o] Error 1
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+7
+    while executing
+"source C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC/solution/cosim.tcl"
+    invoked from within
+"hls::main C:/LDPC_decoder_HLS/LDPC_QC_v4_no_flush/sc_LDPC_QC/solution/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
